@@ -1,0 +1,15 @@
+.bg-wallpaper {
+    background-repeat: no-repeat;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+}
+
+.img-translate-y{
+    transform: translate(-50%, -50%);
+}
+
+.tab-item.active{
+    border-color: #11242e !important;
+    color: #11242e !important;
+}

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary: #00B7FF;
+}
+
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* width */
+::-webkit-scrollbar { 
+    width: 3px; 
+    background: transparent;
+} 
+  
+/* Track */
+::-webkit-scrollbar-track { 
+    background: transparent;
+} 
+  
+/* Handle */
+::-webkit-scrollbar-thumb { 
+    background: #F1F1F1; 
+    border-radius: 5px; 
+} 
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover { 
+    background: #E5E5E5; 
+}
+
+@layer components {
+
+    .menu-item-child {
+        @apply flex items-center p-2 text-white
+
+    }
+
+    .menu-item.active > .menu-item-child{
+        @apply text-white bg-primary/20
+
+    }
+    .menu-item {
+        @apply relative
+    }
+
+    .menu-item.active{
+        @apply after:content-[''] after:w-1 after:h-full after:absolute after:top-0 after:right-0 after:bg-primary after:rounded-l
+    }
+
+    .nav-item {
+        @apply transition-all relative text-lg hover:text-primary duration-300 after:ease-in-out after:duration-300 after:transition-all after:absolute after:w-0 after:h-0.5 after:bg-gray-300 after:rounded-full after:transform after:-translate-x-1/2 after:translate-y-full after:left-0 after:top-full
+    }
+
+    .nav-item.active {
+        @apply text-primary after:w-4/5 after:left-1/2 after:bg-primary
+    }
+
+
+}
+
