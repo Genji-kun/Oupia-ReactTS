@@ -12,18 +12,22 @@
 
 ```bash
 git clone https://github.com/Genji-kun/DoAnNganh-2051052097-VoPhuPhat.git
+```
 
 2. Di chuyển vào thư mục dự án:
 
 ```bash
 cd frontend  
+```
 
 3. Cài đặt các gói phụ thuộc bằng npm:
 
 ```bash
 npm install
+```
 
 4. Chạy dự án: 
 
 ```bash
 npm run dev
+```
